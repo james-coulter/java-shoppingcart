@@ -27,7 +27,7 @@ public class AuthorizationServerConfig
     /**
      * Client secret is the password for the client application. It is read from the environment variable OAUTHCLIENTSECRET
      */
-    static final String CLIENT_SECRET = System.getenv("OAUTHCLIENTSECRET"); // read from environment variable
+    static final String CLIENT_SECRET = "lambda-secret"; //System.getenv("OAUTHCLIENTSECRET"); // read from environment variable
 
 
     /**
