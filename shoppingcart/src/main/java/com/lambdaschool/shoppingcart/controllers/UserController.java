@@ -47,6 +47,7 @@ public class UserController
                                     HttpStatus.OK);
     }
 
+    @PreAuthorize("hasAnyRole('ADMIN')")
     @PostMapping(value = "/user", consumes = {"application/json"})
     public ResponseEntity<?> addUser(@Valid @RequestBody User newuser)
     {
